@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'] //Archivo estilos CSS
 })
 export class AppComponent { //Clase
-  title = 'myApp';
+  title = 'App Prueba';
   saludo = 'Hola Alumnos de angular'; //Agrego una propiedad al componente
 }
