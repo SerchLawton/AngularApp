@@ -1,0 +1,15 @@
+<p>Nombre del empleado: {{nombre}}</p>
+<p>Apellido del empleado: {{getApellido()}}</p>
+<p>Edad del empleado: {{edad+1}} ({{edad<18 ? "Menor de edad":"Mayor de edad"}})</p>
+<p>Empresa del empleado: {{empresa}}</p>
+<br>
+Introduzca el nombre de la empresa
+<input type="text" [(ngModel)]="empresa" [disabled]="cuadroHabilitado">
+<br>
+{{usuRegistrado ? "Usuario registrado" : "No hay nadie registrado"}}
+<br>
+Registrado:
+<input type="radio" value="Si" name="rdbRegistro" id="registro" (click)="registrarUsuario($event)">
+<br>
+No registrado:
+<input type="radio" value="No" name="rdbRegistro"  (click)="registrarUsuario($event)">
